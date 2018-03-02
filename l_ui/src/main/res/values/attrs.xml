@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="lTextSize" format="dimension" />
+    <attr name="lTextColor" format="color" />
+    <attr name="lRepeat" format="boolean" />
+
+
+    <!-- TextView -->
+    <attr name="lTextViewStyle" format="reference" />
+    <declare-styleable name="TextView">
+        <!--字体-->
+        <attr name="lFont" format="string" />
+        <!--边框-->
+        <attr name="lBorder">
+            <flag name="all" value="0x1111" />
+            <flag name="left" value="0x0001" />
+            <flag name="top" value="0x0100" />
+            <flag name="right" value="0x0010" />
+            <flag name="bottom" value="0x1000" />
+        </attr>
+        <!--边框宽度-->
+        <attr name="lBorderSize" format="dimension" />
+        <!--边框颜色-->
+        <attr name="lBorderColor" format="color|reference" />
+    </declare-styleable>
+
+
+    <!--MarqueeView-->
+    <attr name="lMarqueeView" format="reference" />
+    <declare-styleable name="MarqueeView">
+        <!--文字大小-->
+        <attr name="lTextSize" />
+        <!--文字颜色-->
+        <attr name="lTextColor" />
+        <!--文字是否单行-->
+        <attr name="lSingleLine" format="boolean" />
+        <!--文字布局-->
+        <attr name="lGravity">
+            <flag name="left" value="0" />
+            <flag name="center" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <!--配置是否要轮播-->
+        <attr name="lRepeat" />
+        <!--间隔-->
+        <attr name="lInterval" format="integer" />
+        <!--动画时间，包含进入和退出-->
+        <attr name="lAnimDuration" format="integer" />
+        <!--方向-->
+        <attr name="lDirection" format="reference">
+            <flag name="bottom_to_top" value="0" />
+            <flag name="top_to_bottom" value="1" />
+            <flag name="right_to_left" value="2" />
+            <flag name="left_to_right" value="3" />
+        </attr>
+        <attr name="lAnimRes" format="reference" />
+        <attr name="useCustomerAnimRes" format="boolean" />
+
+    </declare-styleable>
+
+
+    <!--lBroadcastView-->
+    <attr name="lBroadcastView" format="reference" />
+    <declare-styleable name="BroadcastView">
+        <!--文字内容-->
+        <attr name="lText" format="string|reference" />
+        <!--文字前图片-->
+        <attr name="lImageRes" format="reference|integer" />
+        <!--图片宽度-->
+        <attr name="lImageWidth" format="dimension" />
+        <!--图片高度-->
+        <attr name="lImageHeight" format="dimension" />
+        <!--文字大小-->
+        <attr name="lTextSize" />
+        <!--文字颜色-->
+        <attr name="lTextColor" />
+        <!--配置是否要轮播-->
+        <attr name="lRepeat" />
+        <attr name="lCancelable" format="boolean" />
+        <attr name="lBackground" format="reference|color"/>
+
+    </declare-styleable>
+
+</resources>

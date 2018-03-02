@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Loosa.Widget.TextView" parent="android:Widget.TextView">
+        <item name="lFont">@string/loosa_font_file</item>
+    </style>
+
+
+</resources>
